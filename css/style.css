@@ -1,0 +1,89 @@
+@font-face{
+    font-family: 'Bahij-regular';
+    src: url(../font/BAHIJ_THESANSARABIC-PLAIN.ttf);
+}
+@font-face{
+    font-family: 'Bahij-bold';
+    src: url(../font/ARBFONTS-BAHIJ_THESANSARABIC-BOLD.TTF);
+}
+@font-face{
+    font-family: 'Bahij-semilight';
+    src: url(../font/BAHIJ_THESANSARABIC-SEMILIGHT.TTF);
+}
+body{
+    font-family:'Bahij-regular', sans-serif;
+    font-size: 18px;
+    direction: rtl;
+}
+.banner{
+    background-image: url(../img/Banner2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-blend-mode: screen; */
+    background-size: cover;
+    height: 100vh;
+    padding-top: 40px ;
+}
+.banner h2{
+    font-family: 'Bahij-bold', Tahoma, Verdana, sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #FFE522;
+    line-height: 70px;
+}
+.banner span.white{
+    color: #fff;
+}
+.banner h4{
+    color: #fff;
+    font-family: 'Bahij-semilight', sans-serif;
+    font-size: 28px;
+    line-height: 50px;
+}
+.banner p{
+  color:#fff ;
+    
+}
+
+.contact img{
+    width: 100%;
+}
+.title{
+    font-family: 'Bahij-bold', Tahoma, Verdana, sans-serif;
+}
+.card-title{
+    padding-top: 9px;
+    padding-right: 9px;
+    color: #000000de;
+}
+.footer{
+    padding-top: 25px;
+    background-color: #013e81;
+    color: #fff;
+}
+
+@media(max-width: 1199px){
+    .banner{
+        padding-top: 20px;
+    }
+    .banner h4{
+        line-height: 1.2;
+    }
+    .banner span.br{
+        display: block;
+        line-height: 50px;
+    }
+}
+@media(max-width: 767px){
+    .banner h2{
+        font-size: 38px;
+    }
+    .banner h4{
+        font-size: 25px;
+    }
+}
+@media(max-width: 400px){
+    .title h2{
+        font-size: 24px;
+    }
+}
