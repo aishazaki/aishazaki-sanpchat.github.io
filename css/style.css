@@ -15,14 +15,18 @@ body{
     font-size: 18px;
     direction: rtl;
 }
+.header{
+    height: 430px;
+    overflow: hidden;
+}
 .banner{
-    background-image: url(../img/Banner2.jpg);
-    background-position: center center;
+    background-image: url(../img/HeadBanner.jpg);
+    background-position: right top;
     background-repeat: no-repeat;
     /* background-blend-mode: screen; */
     background-size: cover;
-    height: 100vh;
-    padding-top: 40px ;
+   /*  height: 80vh;
+    padding-top: 40px ; */
 }
 .banner h2{
     font-family: 'Bahij-bold', Tahoma, Verdana, sans-serif;
@@ -44,7 +48,75 @@ body{
   color:#fff ;
     
 }
-
+.packages{
+    padding: 80px 100px 30px;
+    background-color: #efefef;
+}
+.packages .col-4{
+    padding: 0px 20px;
+    margin-top: 75px;
+}
+/* .packages h3{
+    color: #0e0d0d;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+} */
+.package{
+    background-color: #fff;
+    color: #003e81;
+    border:1px solid #fff;
+    border-radius: 17px;
+    position: relative;
+    padding-top: 100px;
+    margin-top: 75px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.package:hover{
+    transform: translateY(-10px);
+}
+.golden{
+    margin-top: 60px;
+}
+.package img{
+    width: 110px;
+    position: absolute;
+    top: -63px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.package h4{
+    margin-bottom: 45px;
+    font-family: 'Bahij-bold';
+}
+.package .price{
+    margin-top: 30px;
+    position: relative;
+    padding: 20px 0px;
+}
+.package .price:before {
+    content: "";
+    background-color: #003e81;
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.sliver .price{
+    color: #797878;
+}
+.bronze .price{
+    color: #ff8a62;
+}
+.golden .price{
+    color: #feb800;
+}
+.price span{
+    font-size: 3rem;
+}
 .contact img{
     width: 100%;
 }
@@ -61,7 +133,11 @@ body{
     background-color: #013e81;
     color: #fff;
 }
-
+@media(min-width:1200px){
+    .header{
+        height: 510px;
+    }
+}
 @media(max-width: 1199px){
     .banner{
         padding-top: 20px;
@@ -74,12 +150,36 @@ body{
         line-height: 50px;
     }
 }
+@media(max-width: 997px){
+    .packages{
+        padding: 30px 50px;
+    }
+}
 @media(max-width: 767px){
+    .header{
+        height: 220px;
+    }
+    .banner{
+        background-image: url(../img/smallScreen-header.jpg);
+        height: 80vh;
+        background-position: center top;
+    }
     .banner h2{
         font-size: 38px;
     }
-    .banner h4{
-        font-size: 25px;
+    .packages{
+        background-color: #f7f7f7;
+        padding: 10px 10px 30px;
+    }
+    .packages .col-12{
+        margin: 1.5rem 0rem;
+    }
+    .package h4{
+        margin-bottom: 20px;
+    }
+    .package .price{
+        margin-top: 25px;
+        padding: 10px 0px;
     }
 }
 @media(max-width: 400px){
