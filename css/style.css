@@ -15,6 +15,11 @@ body{
     font-size: 18px;
     direction: rtl;
 }
+/************************************************
+*********************************************
+header
+*********************************************
+**************************************************/
 .header{
     height: 350px;
     overflow: hidden;
@@ -45,6 +50,11 @@ body{
   color:#fff ;
     
 }
+/************************************************
+*********************************************
+package  cards 
+*********************************************
+**************************************************/
 .packages{
     padding: 80px 100px 30px;
     background-color: #efefef;
@@ -83,6 +93,60 @@ body{
     right: 50%;
     transform: translateX(50%);
 }
+/*stars and their animamation*/
+.package .star{
+    width: 27px;
+    position: absolute;
+    transform: translateX(50%);
+}
+.package .star1{
+    top: -72px;
+    right: 66%;
+    animation: fadeInOut1 6s cubic-bezier(0.18, 0.89, 0.32, 1.28)reverse forwards infinite;
+}
+.package .star2{
+    top: -4px;
+    right: 73%;
+    animation: fadeInOut2 6s cubic-bezier(0.18, 0.89, 0.32, 1.28) reverse forwards infinite;
+}
+.package .star3{
+    top: -8px;
+    right: 29%;
+    animation: fadeInOut3 6s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards infinite;
+}
+.package .star4{
+    top: -42px;
+    right: 28%;
+    animation: fadeInOut3 6s cubic-bezier(0, 0.19, 0, 0.54) forwards infinite;
+}
+.package .star5{
+    top: -74px;
+    right: 40%;
+    animation: fadeInOut1 6s cubic-bezier(0.18, 0.89, 0.32, 1.28)  infinite;
+}
+
+@keyframes fadeInOut1 {
+    0% { opacity: 0 }
+    1% { opacity: 1 }
+    32% {opacity: 1 }
+    33% { opacity: 0 }
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 0 }
+    32% {opacity: 0 }
+    33% { opacity: 1 }
+    64% { opacity: 1 }
+    66% { opacity: 0 }
+}
+
+@keyframes fadeInOut3 {
+    0% { opacity: 0 }
+    64% {opacity: 0 }
+    66% {opacity: 1 }
+    99% { opacity: 1 }
+    100% { opacity: 0 }
+}
 .package h4{
     margin-bottom: 45px;
     font-family: 'Bahij-bold';
@@ -102,6 +166,7 @@ body{
     right: 50%;
     transform: translateX(50%);
 }
+/*shine  btn*/
 .book-package-btn{
     font-size: 1.18rem;
     border-radius: 20px;
@@ -122,7 +187,7 @@ body{
 
 }
 .sliver .book-package-btn{
-    box-shadow: 0 0 30px rgb(121, 120, 120), 0 0 30px rgb(132, 127, 115, 0.80);
+    box-shadow: 0 0 15px rgb(121, 120, 120), 0 0 10px rgb(132, 127, 115, 0.80);
     background-image: linear-gradient(0 0, 
         rgba(255, 255, 255, 0.2) 0%, 
         rgba(58, 29, 29, 0.2) 35%, 
@@ -144,7 +209,7 @@ body{
 }
 
 .golden .book-package-btn{
-    box-shadow: 0 0 30px rgb(254, 184, 0), 0 0 30px rgb(254, 208, 79, 0.81);
+    box-shadow: 0 0 15px rgb(254, 184, 0), 0 0 10px rgb(254, 208, 79, 0.81);
     background-image: linear-gradient(0 0, 
         rgba(255, 255, 255, 0.2) 0%, 
         rgba(255, 255, 255, 0.2) 35%,
@@ -165,7 +230,7 @@ body{
         -moz-linear-gradient(left, rgb(254, 184, 0, 0.97) 0% , #feb800 100%);
 }
 .bronze .book-package-btn{
-    box-shadow: 0 0 30px rgb(222, 84, 37, 0.87), 0 0 30px rgb(255, 233, 181,  0.80);
+    box-shadow: 0 0 15px rgb(222, 84, 37, 0.87), 0 0 10px rgb(255, 233, 181,  0.80);
     background-image: linear-gradient(0 0, 
         rgba(255, 255, 255, 0.2) 0%, 
         rgba(255, 255, 255, 0.2) 35%, 
@@ -186,7 +251,7 @@ body{
         -moz-linear-gradient(left, #dc8a6e 0% , #ff8a62 100%);
 
 }
-.book-package-btn:hover {
+.book-package-btn:hover, .book-package-btn:active, .book-package-btn:focus {
     color: #fff;
     background-position: 0 0, -1px -1px;
     transition-duration: 0.8s;
@@ -208,6 +273,11 @@ body{
 .contact img{
     width: 100%;
 }
+/************************************************
+*********************************************
+gallery
+*********************************************
+**************************************************/
 .title{
     font-family: 'Bahij-bold', Tahoma, Verdana, sans-serif;
 }
@@ -216,6 +286,11 @@ body{
     padding-right: 9px;
     color: #000000de;
 }
+/************************************************
+*********************************************
+footer
+*********************************************
+**************************************************/
 .footer{
     background-color: #013e81;
     color: #fff;
@@ -223,9 +298,30 @@ body{
 .footer .wave{
     background-color: #fff;
 }
+
+/************************************************
+*********************************************
+media
+*********************************************
+**************************************************/
 @media(min-width:1200px){
     .banner{
         background-size: 100% 140%;
+    }
+    .package .star1{
+        right: 61%;
+    }
+    .package .star2{
+        right: 66%;
+    }
+    .package .star3{
+        right: 35%;
+    }
+    .package .star4{
+        right: 34%;
+    }
+    .package .star5{
+        right: 42%;
     }
 }
 @media(max-width: 1199px){
@@ -244,6 +340,18 @@ body{
     .packages{
         padding: 30px 50px;
     }
+    .package .star2{
+        right: 78%;
+    }
+    .package .star3{
+        right: 23%;
+    }
+    .package .star4{
+        right: 26%;
+    }
+    .package .star5{
+        right: 37%;
+    }
 }
 @media(max-width: 767px){
     .header{
@@ -251,7 +359,7 @@ body{
     }
     .banner{
         background-image: url(../img/smallScreen-header.jpg);
-        height: 80vh;
+        height: 90vh;
         background-position: center top;
     }
     .banner h2{
@@ -271,9 +379,58 @@ body{
         margin-top: 25px;
         padding: 10px 0px;
     }
+    .package .star1{
+        right: 56%;
+    }
+    .package .star2{
+        right: 61%;
+    }
+    .package .star3{
+        right: 40%;
+    }
+    .package .star4{
+        right: 39%;
+    }
+    .package .star5{
+        right: 45%;
+    }
+}
+@media(max-width: 576){
+    .package .star1{
+        right: 61%;
+    }
+    .package .star2{
+        top: -6px;
+        right: 65%;
+    }
+    .package .star3{
+        top: -3px;
+        right: 37%;
+    }
+    .package .star4{
+        right: 34%;
+    }
+    .package .star5{
+        right: 43%;
+    }
 }
 @media(max-width: 400px){
     .title h2{
         font-size: 24px;
+    }
+    .package .star1{
+        right: 63%;
+    }
+    .package .star2{
+        right: 71%;
+    }
+    .package .star3{
+        right: 30%;
+    }
+    .package .star4{
+        right: 30%;
+    }
+    .package .star5{
+        right: 41%;
     }
 }
