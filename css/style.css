@@ -359,7 +359,7 @@ media
     }
     .banner{
         background-image: url(../img/smallScreen-header.jpg);
-        height: 90vh;
+        height: 80vh;
         background-position: center top;
     }
     .banner h2{
